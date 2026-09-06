@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-outlierpulse.vercel.app-00F0FF?style=for-the-badge&logo=vercel&logoColor=black)](https://outlierpulse.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2.35-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -11,6 +12,8 @@
 
 <p align="center">
   <strong>Enterprise-grade YouTube packaging intelligence, outlier detection engine, and viral multiplier analytics platform.</strong>
+  <br />
+  🚀 <strong>Live Demo:</strong> <a href="https://outlierpulse.vercel.app/">https://outlierpulse.vercel.app/</a>
 </p>
 
 </div>
