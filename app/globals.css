@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #08090d;
+  --foreground: #f8fafc;
+  --card: rgba(18, 20, 29, 0.7);
+  --border: rgba(255, 255, 255, 0.07);
+  --violet: #8b5cf6;
+  --crimson: #ef4444;
+  --emerald: #10b981;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.16), transparent 32%),
+    radial-gradient(circle at 90% 85%, rgba(239, 68, 68, 0.14), transparent 28%),
+    #08090d;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.4) transparent;
+}
+
+@layer components {
+  .glass-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow:
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.05),
+      0 24px 80px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(24px);
+  }
+
+  .bg-root {
+    background: transparent;
+  }
+}
+
+.orb {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.55;
+  animation: pulse-drift 15s ease-in-out infinite;
+}
+
+.orb-violet {
+  top: 20%;
+  left: 10%;
+  height: 280px;
+  width: 280px;
+  background: rgba(139, 92, 246, 0.3);
+}
+
+.orb-crimson {
+  right: 10%;
+  bottom: 15%;
+  height: 320px;
+  width: 320px;
+  background: rgba(239, 68, 68, 0.28);
+  animation-delay: -6s;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(100, 116, 139, 0.18) 0%,
+    rgba(139, 92, 246, 0.22) 50%,
+    rgba(100, 116, 139, 0.18) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes pulse-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate3d(24px, -18px, 0) scale(1.08);
+    opacity: 0.7;
+  }
+}
