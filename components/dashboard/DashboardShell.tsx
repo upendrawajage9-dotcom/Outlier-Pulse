@@ -219,8 +219,7 @@ export function DashboardShell() {
               <div className="p-5">
                 <h2 className="mb-2 text-lg font-semibold">Settings</h2>
                 <p className="text-sm text-slate-400">
-                  Add `YOUTUBE_API_KEY` to `.env.local` to switch from the mock engine to live
-                  quota-batched YouTube Data API v3 calls.
+                  
                 </p>
                 <div className="mt-4 grid gap-3 md:grid-cols-3">
                   <div className="rounded-2xl border border-white/10 p-4">
